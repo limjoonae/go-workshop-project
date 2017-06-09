@@ -6,7 +6,10 @@
   System.config({
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/'
+      // 'npm:': 'node_modules/'
+      'npm:': 'http://10.182.247.73/go-cdn-dev/node_modules/4.0.0/',
+      'go:': 'http://10.182.247.73/go-cdn-dev/dist/go/2.0.0/',
+      'lib:': 'http://10.182.247.73/go-cdn-dev/dist/lib/1.0.0/',
     },
     // map tells the System loader where to look for things
     map: {
@@ -25,7 +28,11 @@
 
       // other libraries
       'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+        
+      //***lib for go-component***
+      'go-module': 'go:gomodule.umd.js',
+      'lib-module': 'lib:libmodule.umd.js',
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
