@@ -6,7 +6,6 @@
   System.config({
     paths: {
       // paths serve as alias
-      // 'npm:': 'node_modules/'
       'npm:': 'http://10.182.247.73/go-cdn-dev/node_modules/4.0.0/',
       'go:': 'http://10.182.247.73/go-cdn-dev/dist/go/2.0.0/',
       'lib:': 'http://10.182.247.73/go-cdn-dev/dist/lib/1.0.0/',
@@ -26,14 +25,31 @@
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
+      // angular animations
+      '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.js',
+      '@angular/animations/browser': 'npm:@angular/animations/bundles/animations-browser.umd.js',
+      '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js',
+
       // other libraries
-      'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-        
+
       //***lib for go-component***
       'go-module': 'go:gomodule.umd.js',
       'lib-module': 'lib:libmodule.umd.js',
     },
+    bundles: {
+    "npm:Rx.system.js": [
+      "rxjs",
+      "rxjs/*",
+      "rxjs/operator/*",
+      "rxjs/observable/*",
+      "rxjs/scheduler/*",
+      "rxjs/symbol/*",
+      "rxjs/add/operator/*",
+      "rxjs/add/observable/*",
+      "rxjs/util/*"
+    ]
+  },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
       app: {
@@ -44,9 +60,7 @@
           }
         }
       },
-      rxjs: {
-        defaultExtension: 'js'
-      }
+      rxjs: { defaultExtension: false }
     }
   });
 })(this);
