@@ -1,7 +1,7 @@
 {
-  "name": "go-web-gallery",
+  "name": "starter-project",
   "version": "1.0.0",
-  "description": "Web Gallery for Show Angular Component",
+  "description": "Starter Project For User",
   "scripts": {
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
