@@ -2,13 +2,13 @@
 
 ### How to use
 
-- run command `npm start` in your terminal.
-- uncomment following line for use framework
+- Run command `npm start` in your terminal.
+- Uncomment following line for use framework
     - import { GoModule }  from 'go-module';
     - import { LibModule }  from 'lib-module';
     - GoModule.forRoot(),
     - LibModule.forRoot(),
-- start to use component.
+- Start to use component.
 
 ### Source for your Production
 
