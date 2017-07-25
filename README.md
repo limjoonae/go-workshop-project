@@ -1,1 +1,17 @@
-## Starter Project For User
+## Starter Project for Front-end Web Application Framework User
+
+### How to use
+
+- run command `npm start` in your terminal.
+- uncomment following line for use framework
+    - import { GoModule }  from 'go-module';
+    - import { LibModule }  from 'lib-module';
+    - GoModule.forRoot(),
+    - LibModule.forRoot(),
+- start to use component.
+
+### Source for your Production
+
+- When your development finished. run command `grunt` in your terminal for copy final version of source to build folder.
+- Copy all source in "build_test" for testing or UAT phase.
+- Copy all source in "build_prd" for production.
