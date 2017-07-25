@@ -13,5 +13,11 @@
 ### Source for your Production
 
 - When your development finished. run command `grunt` in your terminal for copy final version of source to build folder.
-- Copy all source in "build_test" for testing or UAT phase.
-- Copy all source in "build_prd" for production.
+- Copy all source in "build_test" folder to use for testing or UAT phase.
+- Copy all source in "build_prd" folder to use for production.
+
+### How to use in RAD or Eclipse
+
+- Create new project as Dynamic Web Project
+- Copy all source in "build_test" or "build_prd" folder into WebContent folder
+- Export EAR normally for deployment.
