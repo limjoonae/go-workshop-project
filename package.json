@@ -1,7 +1,7 @@
 {
-  "name": "starter-project",
+  "name": "workshop-project",
   "version": "1.0.0",
-  "description": "Starter Project For User",
+  "description": "Project for Front-end Web Application Framework workshop",
   "scripts": {
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
