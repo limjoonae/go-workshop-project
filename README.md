@@ -18,6 +18,6 @@
 
 ### How to use in RAD or Eclipse
 
-- Create new project as Dynamic Web Project
-- Copy all source in "build_qa" or "build_prd" folder into WebContent folder
+- Create new project as Dynamic Web Project.
+- Copy all source in "build_qa" or "build_prd" folder into WebContent folder.
 - Export EAR normally for deployment.
